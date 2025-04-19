@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request the deletion of your data from the Feasty app.">
+    <title>Feasty — Data Deletion Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .note {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feasty — Data Deletion Request</h1>
+        <p>If you'd like us to delete your recipes, friends, or account, please enter your email address below. We'll process your request as soon as possible.</p>
+        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+            <input type="hidden" name="_subject" value="Feasty Data Deletion Request">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="email" name="Email" placeholder="Your email address" required>
+            <button type="submit">Request Data Deletion</button>
+        </form>
+        <p class="note">We will confirm your request via email before proceeding.</p>
+    </div>
+</body>
+</html>
